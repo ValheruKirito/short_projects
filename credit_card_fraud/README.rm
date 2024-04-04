@@ -1,0 +1,1 @@
+Using Skorch (implementation of PyTorch into sklearn's API) to GridSearch with cross validation over various Forward-feed neural networks to classify famously imbalanced Kaggle dataset (positive class is about 0.17%).
