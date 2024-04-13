@@ -53,10 +53,10 @@ The author is definitely NOT a front-end developer and apps interface look accor
 
 Here we provide an example of improving the question while following the instructions. Evaluation mode was set to "on key release", providiing instantanous feedback.
 
-![before advice](/images/before_advice.png)
+![before advice](images/before_advice.png)
 
-![after 1st round](/images/after_1st_advice.png)
+![after 1st round](images/after_1st_advice.png)
 
-![after 2nd round](/images/after_2nd_advice.png)
+![after 2nd round](images/after_2nd_advice.png)
 
 The provided recommendations are definitely far from user friendly, as we have stated before, this is more of a concept than a polished final product.
