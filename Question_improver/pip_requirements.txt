@@ -1,0 +1,2 @@
+spacy_syllables==3.0.2
+spacytextblob==4.0.0
