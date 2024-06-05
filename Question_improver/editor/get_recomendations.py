@@ -1,5 +1,6 @@
 """Get recomendations from docstring."""
 import os
+from cachetools import cached, TTLCache
 
 from lime.lime_tabular import LimeTabularExplainer
 
@@ -39,6 +40,8 @@ DISPLAY_NAMES = {
     'VERB': 'frequency of verbs',
     'X': 'frequency of others'
 }
+
+CACHE = TTLCache(maxsize=256, ttl=600)
 
 
 def make_explainer(model: str = 'v3'):
@@ -184,7 +187,7 @@ def get_reading_level_from_flesch(flesch: float) -> str:
             return 'Professionals could read this'
 
 
-
+@cached(CACHE)
 def get_recommendation_report(text: str) -> str:
     """Pipeline recommendations.
 
