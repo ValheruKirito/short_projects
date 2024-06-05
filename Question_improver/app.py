@@ -1,4 +1,4 @@
-"""First easy implementation of the recommendation system."""
+"""First simple implementation of the recommendation system."""
 import warnings
 
 import tkinter as tk
